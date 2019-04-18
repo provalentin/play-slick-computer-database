@@ -23,6 +23,7 @@ GET     /computers                  controllers.Application.list(p:Int ?= 0, s:I
 
 # Add computer
 GET     /computers/new              controllers.Application.create
++ nocsrf
 POST    /computers                  controllers.Application.save
 
 # Edit existing computer
