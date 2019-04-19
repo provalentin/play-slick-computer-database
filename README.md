@@ -1,9 +1,10 @@
-## How to build Fat Jar
-```sbt assembly```
+## How to build zip distributive
+```sbt dist```
 
 ## How to run app
-```java -Dplay.evolutions.db.default.autoApply=true  -jar target/scala-2.12/computerDatabaseSample-assembly-0.1-SNAPSHOT.jar```
+``` unzip ./target/universal/computerdatabasesample-0.1-SNAPSHOT.zip```
 
+```./target/universal/computerdatabasesample-0.1-SNAPSHOT/bin/computerdatabasesample -Dplay.evolutions.db.default.autoApply=true```
 
 # play-scala-slick-computer-database-example
 
