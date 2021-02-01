@@ -6,6 +6,8 @@ scalaVersion := "2.12.3"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
+val doobieVersion = "0.9.0"
+
 libraryDependencies ++= Seq(
 	guice,
 	"com.typesafe.play" %% "play-slick" % "3.0.1",
@@ -14,6 +16,11 @@ libraryDependencies ++= Seq(
 	"org.apache.commons" % "commons-text" % "1.4",
 	"org.apache.commons" % "commons-lang3" % "3.7",
 	"org.passay" % "passay" % "1.3.1",
+  "org.tpolecat" %% "doobie-core" % doobieVersion,
+  "org.tpolecat" %% "doobie-h2" % doobieVersion,
+  //  "org.tpolecat" %% "doobie-postgres" % doobieVersion,
+  //  "org.tpolecat" %% "doobie-specs2" % doobieVersion,
+  //  "org.tpolecat" %% "doobie-scalatest" % doobieVersion,
 	"com.h2database"   	%  "h2"                       % "1.4.196",
 	"org.scalatestplus.play" %% "scalatestplus-play" % "3.0.0" % "test"
 )
